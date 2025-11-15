@@ -21,8 +21,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #050f0b;
-  border-bottom: 2px solid #2356ff;
+  background: #025836;
+  border-bottom: 2px solid #03ffee;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -62,6 +62,16 @@ body {
 .nav-link:hover,
 .nav-link:focus-visible {
   color: #73ffbf;
+}
+
+.text-link {
+  color: #73ffbf;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.text-link:hover,
+.text-link:focus-visible {
+  color: #b6ffe0;
 }
 
 .dropdown {
@@ -279,6 +289,82 @@ footer {
 
 footer .bn {
   font-family: "Noto Sans Bengali", sans-serif;
+}
+
+.policy {
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  padding: 0 1.5rem;
+}
+
+.policy-intro {
+  text-align: center;
+  padding: 4rem 0 2rem;
+}
+
+.policy-intro .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.85rem;
+  color: #b6ffe0;
+}
+
+.policy-intro h1 {
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  margin-bottom: 1rem;
+}
+
+.last-updated {
+  color: rgba(244, 255, 248, 0.7);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.policy-section {
+  background: rgba(4, 26, 19, 0.6);
+  border: 1px solid rgba(167, 243, 208, 0.18);
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.policy-section h2 {
+  margin-top: 0;
+  color: #73ffbf;
+}
+
+.policy-section ul,
+.policy-section ol {
+  padding-left: 1.2rem;
+  line-height: 1.8;
+  color: rgba(244, 255, 248, 0.85);
+}
+
+.policy-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.policy-table th,
+.policy-table td {
+  border: 1px solid rgba(167, 243, 208, 0.2);
+  padding: 0.85rem;
+  text-align: left;
+}
+
+.policy-table th {
+  background: rgba(255, 255, 255, 0.05);
+  color: #c8f5dd;
+}
+
+.policy-table td {
+  vertical-align: top;
+}
+
+.policy-section a {
+  color: #73ffbf;
 }
 
 @media (max-width: 700px) {
