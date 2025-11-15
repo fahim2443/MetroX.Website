@@ -1,0 +1,39 @@
+{
+  "name": "metrox-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MetroX marketing site for Bangladesh metro system",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "metrox",
+    "metro",
+    "bangladesh",
+    "nextjs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@10.22.0",
+  "dependencies": {
+    "next": "^14.2.33",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.22",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.33",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MetroX — Bangladesh Metro Companion</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="brand">
+        <img src="assets/logo.png" alt="MetroX logo" class="brand-mark" />
+        <span class="brand-name">MetroX</span>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#network-map" class="nav-link">Map</a>
+        <a href="https://github.com/fahim2443" class="nav-link" target="_blank" rel="noreferrer">Contributors</a>
+        <a href="https://github.com/fahim2443/metrox-app" class="nav-link" target="_blank" rel="noreferrer">GitHub</a>
+        <div class="dropdown">
+          <button class="dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+            Help ▾
+          </button>
+          <div class="dropdown-menu" role="menu">
+            <a href="#help" class="dropdown-item" role="menuitem">Help</a>
+            <a href="#privacy" class="dropdown-item" role="menuitem">Privacy Policy</a>
+            <a href="#support" class="dropdown-item" role="menuitem">Support</a>
+            <a href="#faq" class="dropdown-item" role="menuitem">FAQ</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <header class="hero" id="home">
+      <p class="eyebrow">Dhaka Metro Rail • MRT Companion</p>
+      <h1>
+        Smart, bilingual guidance for
+        <span>MetroX</span>
+        commuters
+      </h1>
+      <p>
+        MetroX is the Dhaka Metro Rail sidekick designed for Rapid Pass riders. Check NFC card balances, explore
+        interactive maps, plan routes, and stay informed — all in Bangla and English.
+      </p>
+      <div class="hero-badges" aria-label="MetroX highlights">
+        <span>NFC Balance Reading</span>
+        <span>Interactive Metro Map</span>
+        <span>Offline Access</span>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="about-section">
+        <article>
+          <h2>About MetroX</h2>
+          <p>
+            Built for Dhaka Metro Rail and Rapid Pass users, MetroX keeps everyday commuting effortless. Readers can
+            quickly scan their NFC cards, browse every MRT line and station, and calculate fares before tapping in.
+          </p>
+          <ul>
+            <li>Full MRT network overview with station insights</li>
+            <li>Route and fare calculator with travel time estimates</li>
+            <li>Dark/light theme, multi-language support, and offline viewing</li>
+          </ul>
+        </article>
+        <article class="about-card">
+          <h3>Supported Cards</h3>
+          <p>Dhaka MRT Rapid Pass, Metro Rail Travel Cards, and any FeliCa-based transit cards used in Bangladesh.</p>
+          <h3>Tech Stack</h3>
+          <p>React Native + Expo · NFC (FeliCa) · Interactive SVG Map · Material Design UI</p>
+        </article>
+      </section>
+
+      <section id="features" class="feature-grid">
+        <article>
+          <h3>Balance & Transactions</h3>
+          <p>Instant Rapid Pass scans show your remaining balance and recent ride history.</p>
+        </article>
+        <article>
+          <h3>Interactive Metro Map</h3>
+          <p>Zoom through the entire network, tap stations for details, and visualize your route.</p>
+        </article>
+        <article>
+          <h3>Route & Fare Calculator</h3>
+          <p>Pick origin/destination stations to see accurate fares and estimated travel time.</p>
+        </article>
+        <article>
+          <h3>Lines & Stations</h3>
+          <p>Browse every metro line with station lists, service updates, and accessibility info.</p>
+        </article>
+        <article>
+          <h3>Theme & Language</h3>
+          <p>Switch between dark/light modes and Bangla/English to match any rider preference.</p>
+        </article>
+        <article>
+          <h3>Offline Ready</h3>
+          <p>Maps and fare calculations remain available even without an active data connection.</p>
+        </article>
+      </section>
+
+      <section id="screens" class="poster-section">
+        <div>
+          <h2>MetroX App Screens</h2>
+          <p>Preview the experience commuters enjoy: intuitive cards, Bangla/English labels, and crisp typography.</p>
+        </div>
+        <div class="poster-grid" aria-label="MetroX app previews">
+          <img src="assets/posters/1.png" alt="MetroX screen 1" />
+          <img src="assets/posters/2.png" alt="MetroX screen 2" />
+          <img src="assets/posters/3.png" alt="MetroX screen 3" />
+          <img src="assets/posters/4.png" alt="MetroX screen 4" />
+          <img src="assets/posters/5.png" alt="MetroX screen 5" />
+          <img src="assets/posters/6.png" alt="MetroX screen 6" />
+          <img src="assets/posters/7.png" alt="MetroX screen 7" />
+          <img src="assets/posters/8.png" alt="MetroX screen 8" />
+        </div>
+      </section>
+
+      <section id="network-map" class="map-section">
+        <div>
+          <h2>Dhaka Metro Network Map</h2>
+          <p>
+            Explore the entire MRT system at a glance. This high-resolution SVG mirrors the in-app map so planners,
+            designers, and riders can study routes in detail.
+          </p>
+          <p class="map-note">Tip: open the SVG in a new tab to zoom without compression.</p>
+          <div class="map-frame" role="group" aria-label="Dhaka metro system map">
+            <img src="assets/metro-map-dark.svg" alt="Dhaka Metro network schematic" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works" aria-label="Getting started guide">
+        <article>
+          <h3>Read NFC Card</h3>
+          <p>Open the Balance tab, place your Rapid Pass near the phone’s NFC reader, and view balance + history.</p>
+        </article>
+        <article>
+          <h3>Plan Your Route</h3>
+          <p>Choose starting and destination stations to see the best route, fare, and travel time instantly.</p>
+        </article>
+        <article>
+          <h3>Explore the Map</h3>
+          <p>Use the interactive map to check every station, amenities, and line status even when offline.</p>
+        </article>
+      </section>
+
+      <section id="help" class="support-grid">
+        <article id="privacy">
+          <h3>Privacy Policy</h3>
+          <p>Details on how MetroX handles card data and analytics will appear before public release.</p>
+        </article>
+        <article id="support">
+          <h3>Support</h3>
+          <p>Need assistance? Reach out via GitHub issues or email fahim2443@gmail.com for priority help.</p>
+        </article>
+        <article id="faq">
+          <h3>FAQ</h3>
+          <p>Common questions around availability, NFC compatibility, and feature roadmap will live here.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> MetroX • Crafted for Dhaka Metro riders</p>
+      <p class="bn">বাংলা ও ইংরেজিতে সেবা উপভোগ করুন</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
